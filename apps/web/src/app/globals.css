@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 10% 10%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 10%;
+    
+    --primary: 280 100% 50%; /* cyber purple */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 190 100% 50%; /* cyber blue */
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 220 10% 90%;
+    --muted-foreground: 220 10% 40%;
+    
+    --accent: 320 100% 50%; /* cyber pink */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 10% 90%;
+    --input: 220 10% 90%;
+    --ring: 280 100% 50%;
+    --radius: 1rem;
+  }
+ 
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 100%;
+    
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 280 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 190 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 240 10% 10%;
+    --muted-foreground: 240 10% 60%;
+    
+    --accent: 320 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 240 10% 12%;
+    --input: 240 10% 12%;
+    --ring: 280 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  @apply bg-white/5 dark:bg-black/40 backdrop-blur-glass border border-white/10 dark:border-white/5 shadow-xl;
+}
+
+.cyber-glow {
+  @apply shadow-[0_0_15px_rgba(191,0,255,0.5)] dark:shadow-[0_0_20px_rgba(0,240,255,0.3)];
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+}

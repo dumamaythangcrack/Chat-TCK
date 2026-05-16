@@ -1,0 +1,40 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.43.4",
+    "@tanstack/react-query": "^5.45.1",
+    "@tck/design-system": "workspace:*",
+    "@tck/i18n": "workspace:*",
+    "@tck/shared": "workspace:*",
+    "@tck/types": "workspace:*",
+    "@tck/ui": "workspace:*",
+    "@upstash/redis": "^1.31.3",
+    "framer-motion": "^11.2.10",
+    "lucide-react": "^0.395.0",
+    "next": "15.0.0-rc.0",
+    "next-themes": "^0.3.0",
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

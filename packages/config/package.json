@@ -1,0 +1,12 @@
+{
+  "name": "@tck/config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "15.0.0-rc.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
+}
