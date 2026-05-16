@@ -134,6 +134,15 @@ importers:
         specifier: ^5
         version: 5.9.3
 
+  packages/ai:
+    dependencies:
+      '@google/generative-ai':
+        specifier: ^0.12.0
+        version: 0.12.0
+      '@tck/shared':
+        specifier: workspace:*
+        version: link:../shared
+
   packages/config:
     dependencies:
       eslint:
@@ -181,6 +190,36 @@ importers:
       next-intl:
         specifier: ^3.15.0
         version: 3.26.5(next@15.0.0-rc.0(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021)
+
+  packages/media:
+    dependencies:
+      '@tck/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/realtime:
+    dependencies:
+      '@supabase/supabase-js':
+        specifier: ^2.43.4
+        version: 2.105.4
+      '@tck/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/recommendation:
+    dependencies:
+      '@supabase/supabase-js':
+        specifier: ^2.43.4
+        version: 2.105.4
+      '@tck/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/security:
+    dependencies:
+      '@tck/shared':
+        specifier: workspace:*
+        version: link:../shared
 
   packages/shared:
     dependencies:
@@ -268,6 +307,10 @@ packages:
 
   '@formatjs/intl-localematcher@0.6.2':
     resolution: {integrity: sha512-XOMO2Hupl0wdd172Y06h6kLpBz6Dv+J4okPLl4LPtzbr8f66WbIoy4ev98EBuZ6ZK4h5ydTN6XneT4QVpD7cdA==}
+
+  '@google/generative-ai@0.12.0':
+    resolution: {integrity: sha512-krWjurjEUHSFhCX4lGHMOhbnpBfYZGU31mpHpPBQwcfWm0T+/+wxC4UCAJfkxxc3/HvGJVG8r4AqrffaeDHDlA==}
+    engines: {node: '>=18.0.0'}
 
   '@google/generative-ai@0.24.1':
     resolution: {integrity: sha512-MqO+MLfM6kjxcKoy0p1wRzG3b4ZZXtPI+z2IE26UogS2Cm/XHO+7gGRBh6gcJsOiIVoH93UwKvW4HdgiOZCy9Q==}
@@ -2333,6 +2376,8 @@ snapshots:
   '@formatjs/intl-localematcher@0.6.2':
     dependencies:
       tslib: 2.8.1
+
+  '@google/generative-ai@0.12.0': {}
 
   '@google/generative-ai@0.24.1': {}
 
