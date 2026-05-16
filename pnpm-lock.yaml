@@ -69,12 +69,30 @@ importers:
       '@tanstack/react-query':
         specifier: ^5.45.1
         version: 5.100.10(react@19.0.0-rc-69d4b800-20241021)
+      '@tck/ai':
+        specifier: workspace:*
+        version: link:../../packages/ai
+      '@tck/database':
+        specifier: workspace:*
+        version: link:../../packages/database
       '@tck/design-system':
         specifier: workspace:*
         version: link:../../packages/design-system
       '@tck/i18n':
         specifier: workspace:*
         version: link:../../packages/i18n
+      '@tck/media':
+        specifier: workspace:*
+        version: link:../../packages/media
+      '@tck/realtime':
+        specifier: workspace:*
+        version: link:../../packages/realtime
+      '@tck/recommendation':
+        specifier: workspace:*
+        version: link:../../packages/recommendation
+      '@tck/security':
+        specifier: workspace:*
+        version: link:../../packages/security
       '@tck/shared':
         specifier: workspace:*
         version: link:../../packages/shared
